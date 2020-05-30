@@ -1,0 +1,18 @@
+Estruturas de Controle
+
+OBS: possivel criar uma função associada ao number e utilizar em qualquer variavel, basta utilizar o prototype
+
+IF ELSE:
+
+como em qualqur linguagem baseada em C
+
+Switch case:
+
+tambem semelhante as outras linguagens porem pode ter cases encadeados ex case 1: case 2: case 3: 'codigo';
+
+Repetições:
+
+Saõ todas semelhantes a linguagens baseadas em C
+
+-Para percorrer um pbjeto utilize a sintaxe do exericio forin
+

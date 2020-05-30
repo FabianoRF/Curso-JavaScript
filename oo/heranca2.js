@@ -1,0 +1,47 @@
+//Cadeia de prototipos
+Object.prototype.attr0='0'//colocando direto no Object
+
+const avo = {attr1: 'A'}
+const pai = {__proto__: avo, attr2: 'B'}//herda de avo
+const filho = {__proto__: pai, attr3: 'C'}//herda do pai
+
+console.log(filho.attr0, filho.attr1, filho.attr2, filho.attr3)
+
+const carro = {
+    velAtual:0, 
+    velMax:200,
+    acelerarMais(delta){
+        if(this.velAtual + delta <= this.velMax){
+            this.velAtual+=delta;
+        } else {
+            this.velAtual = this.velMax
+        }
+    },
+    status(){
+        return`${this.velAtual}Km/h de ${this.velMax}Km/h`
+    }
+}
+
+const ferrari={
+    modelo: 'F40',
+    velMax:324, //shadowing sobreamento
+
+}
+
+const volvo={
+    modelo:'V40',
+    status(){//sombreando ou seja ficando em cima
+        return `${this.modelo}: ${super.status()}`;//super referencia ao prototipo ou seja o pai
+    }
+}
+
+Object.setPrototypeOf(ferrari, carro);//ferrari tem carro como seu prototypo
+Object.setPrototypeOf(volvo, carro);//volvo herda o carro
+
+console.log(ferrari);
+console.log(volvo);
+
+volvo.acelerarMais(100);
+console.log(volvo.status());
+ferrari.acelerarMais(300);
+console.log(ferrari.status())

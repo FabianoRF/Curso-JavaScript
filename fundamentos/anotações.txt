@@ -1,0 +1,61 @@
+Arrays:
+
+-Uma array pode ser de qualquer tipo e sempre pose se adicionar em posiçoes que nao existem
+
+-Um array sempre é do tipo object
+
+
+Métodos:
+
+-length de um array diz sempre o tamanho com base na ultima posição que há um valor
+
+-push adiciona à ultima posição
+
+-pop retira a ultima posição do array e a retorna
+
+-delete => retira d uma posição especifica( colocar a paçavra delete antes, pois não é um método)
+
+Objetos{
+    -Um objeto javascript é diferente de um json
+    -sempre se trata de um arquivo chave valor
+}
+
+Funções: 
+
+-Podem ser parametros, podem ser passadas para uma variavel, enfim javascript tem como base as Funções
+
+-Um objeto e uma classe são funções em js 
+
+Escopo:
+
+uma variavel var pode ser vista em outros blocos porem nao se for de uma função, ja o let so é visto dentro 
+do seu bloco
+
+**O window é um objeto global que armazena tudo que fica fora de uma função (dentro do navegador, ja no node ela
+se chama global)**
+
+Hoisting(içar)
+
+Se uma variavel for requisitada mais ainda não declarada, ela existe para o javascript, porem so recebe o valor na linha 
+correspondente - isso pra uma variavel var
+
+Desustruração:
+
+basta usar as chaves{} em um objeto com o nome de um atributo e voce conseguira usar estes atributos
+- usando : vc o nomeia
+- Também aceita valores padrão com o sinal de atribuição
+-caso o dado nao exista o retorno será undefined
+
+Operadores relacionais
+
+( == ) - retorna true para valores iguais 
+
+( === ) - retorna true para tipos e valores iguais
+
+tratamento de erros
+
+-try catch normal, porem no catch pode se chamar um função que dipara um throw, um palavra reservada que retorna algo junto como 
+erro ou seja erro
+
+-a palavra finnaly pode ser usada para quando terminar o try catch fzer algo, obs ela sempre vao ser executada 
+

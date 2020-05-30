@@ -1,0 +1,26 @@
+Objetos
+
+-Object.freeze => faz com que o objeto não possa ser mudado
+
+-Como nao existem variveis privadas no js, ele utiliza de uma convenção de se utilizar o _ antes do nome da variavel
+
+-Não existe sobrecarga de metodos no js, apenas no caso de get e set
+
+-Não é obrigatorio o uso de get e set, porem se quiser utilizar de uma validação pode se usar
+
+-Os Gets e sets são executados internamente não sendo necessário chamalos por nome
+
+Funçoes do object:
+
+-consultar exercicio funcoesImportantes
+
+Herança:
+
+- O conceito de Herança no js é baseado em prototipo e para um obj acessar um prototipo usa se __proto__
+
+- Para dizer que um objeto herda outro no js, basta colocar o atributo __proto__ com o nome do pai
+
+- metodo setPrototypeOf(), faz com que um objeto herde o outro (primeiro herda o segundo)
+
+- TODA FUNÇÃO POSSUI UM ATRIBUTO CHAMADO PROTOTYPE, inclusive os tipos pois os mesmos são funções
+
